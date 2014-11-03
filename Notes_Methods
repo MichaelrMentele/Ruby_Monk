@@ -1,0 +1,40 @@
+Method Usage:
+  Class#method is standard way of referring to methods in Ruby API
+
+  The '?' at the end of a method implies that the method only returns boolean values.
+  
+  The '+' method when used in the context of concatenation creates a new third string but does not modify the original. '<<' Will actually modify the original string.
+  
+  For methods you can use regular expressions for things like substitution.
+
+New Methods:
+
+  .sub('value to replace', 'replacee') <- for first occurrence only
+  .gsub('value to replace', 'replacee') <- for all occurreces
+  .match(//, starting point in index)
+  << <- append method, its awesome and modifies the original thing you are appending to
+  .map{|i| i.INSERTOPERATION HERE}
+    Ex: .map{|i| i + 1} if used on an array will add 1 to every element
+  .delete_if{|i| i < 4}
+  .each do |i| is the same as a for loop
+
+Operators:
+
+  unless x is eq to if !x
+  
+  Ternary is shorthand for and if-else construct! super cool!
+  Ex: 
+  number ==1 ? "#{number} is 1" : "#{number} is not 1" 
+    OR
+  if number == 1
+    "#{number} is 1"
+  else 
+    "#{number} is not 1"
+  end
+
+  if statements can return other things if you say if 0
+  
+  Below is an infinite loop
+  loop do 
+  end
+
